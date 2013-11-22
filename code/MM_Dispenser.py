@@ -26,7 +26,7 @@ ser = serial.Serial('/dev/tty.usbserial-A700eY2N',9600,timeout=1)
 print ser.portstr
 
 ### Open the pre-defined Microsoft Excel spreadsheet 
-book = xlrd.open_workbook("/Users/Shiva/Documents/Life/Hobbies/Arduino/Candy_Dispenser/MM_Dispenser_Test_Short.xls", formatting_info=1) 
+book = xlrd.open_workbook("<Insert path>/MM_Dispenser_Test_Short.xls", formatting_info=1) 
 sheets = book.sheet_names()
 print "The sheet names are:", sheets 
 
